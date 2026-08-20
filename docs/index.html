@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Candidate Architecture Walkthrough</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="candidate">
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Manufacturing Edge Architecture</p>
+      <h1>Candidate Walkthrough</h1>
+    </div>
+  </header>
+
+  <main class="page-stack">
+    <section class="diagram-panel" aria-label="Architecture diagram">
+      <div class="diagram-wrap">
+        <img src="Gemini_Generated_Image_7ed2jc7ed2jc7ed2.png" alt="Factory edge, Kafka, and processing architecture diagram">
+        <div id="hotspots" class="hotspots" aria-label="Interactive architecture hotspots"></div>
+      </div>
+    </section>
+
+    <section class="study-banner" aria-label="Study timer">
+      <div>
+        <p class="eyebrow">Candidate preparation</p>
+        <h2>Study the architecture for five minutes, then answer the challenges.</h2>
+      </div>
+      <div class="timer-box" aria-live="polite">
+        <span id="study-timer">05:00</span>
+        <button id="timer-toggle" class="primary-button" type="button">Start</button>
+        <button id="timer-reset" class="secondary-button inline" type="button">Reset</button>
+      </div>
+    </section>
+
+    <section id="scenario-sections" class="content-grid" aria-label="Scenario sections"></section>
+    <section id="candidate-challenges" class="challenge-grid" aria-label="Candidate challenges"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
