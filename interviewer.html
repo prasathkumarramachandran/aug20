@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interviewer Scoring Console</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="interviewer">
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Manufacturing Edge Architecture</p>
+      <h1>Interviewer Scoring Console</h1>
+    </div>
+  </header>
+
+  <main class="page-stack interviewer-page">
+    <section class="diagram-panel" aria-label="Architecture diagram">
+      <div class="diagram-wrap">
+        <img src="Gemini_Generated_Image_7ed2jc7ed2jc7ed2.png" alt="Factory edge, Kafka, and processing architecture diagram">
+        <div id="hotspots" class="hotspots" aria-label="Interactive architecture hotspots"></div>
+      </div>
+    </section>
+
+    <section class="interviewer-summary" aria-label="Scoring summary">
+      <div>
+        <p class="eyebrow">Interview capture</p>
+        <h2>Record challenge answers, validate coverage, and watch stakeholder handling signals.</h2>
+      </div>
+      <div class="score-row compact-row">
+        <span id="overall-score" class="score-number">0%</span>
+        <button id="reset-scores" class="secondary-button inline" type="button">Reset Scores</button>
+      </div>
+    </section>
+
+    <section id="scenario-sections" class="content-grid" aria-label="Scenario sections"></section>
+    <section id="interviewer-challenges" class="challenge-grid interviewer-challenges" aria-label="Interview challenges"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
